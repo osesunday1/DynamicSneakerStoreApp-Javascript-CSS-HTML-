@@ -1,0 +1,286 @@
+
+/* responsive */
+@media screen and (max-width: 1160px) {
+    .nav {
+      padding: 15px 100px;
+    }
+    .nav .search-box {
+      right: 150px;
+    }
+
+    .slider-wrapper .slide-button{
+      display: none!important;
+    }
+
+    .slider-wrapper .image-list{
+      gap: 10px;
+      margin-bottom: 15px; 
+    }
+
+    .slider-wrapper .image-list .image-item{
+      width: 280px;
+      height: 380px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb{
+      width: 20%
+    }
+
+    /*------------------------------------------------------------------- Section 2----------------------------------------------------------------*/
+/*===============================slide in popContainer===========================*/
+
+
+
+    .sideMainPopup{
+      position: absolute;
+      right: 0;
+      height:100%;
+      width: 100%;
+      z-index: 1;
+      background: rgb(199, 199, 199);
+      padding: 30px 20px;
+      display: flex;
+      transform: translateX(100%);
+      display: grid;
+      grid-template-columns:repeat(1, 1fr);
+      gap: 50px;
+    }
+
+    /*=============cart Box===========*/
+    .cartBox{
+      display: grid;
+      grid-template-columns:repeat(1, 1fr);
+      gap: 20px;
+      height: 100%;
+      margin-top: 50px;
+    }
+
+    .cartSpinner{
+      margin: 0 auto;
+    }
+
+    .cartBox .cartDecision span{
+      margin: 0 auto;
+    }
+
+    .cartBox .cartimg{
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+
+    }
+    .cartBox .cartimg .cartimgIMG{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+  
+
+
+  }
+
+    
+  
+
+
+  @media screen and (max-width: 950px) {
+    .nav {
+      padding: 15px 50px;
+    }
+    .nav .search-box {
+      right: 100px;
+      max-width: 400px;
+    }
+
+    .section--1 .categories .part1-B {
+      width: 80%;
+      height: 500px;
+      background: #fff;
+      justify-content: center;
+      align-items: center;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    .section--1 .categories{
+      display: grid;
+      grid-template-columns: repeat(1, auto); /* Two columns */
+      width: 100%;
+      gap: 30px;
+      align-items: center;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    .section--1 .categories .part1-A {
+      display: grid;
+      grid-template-columns: repeat(2, auto); /* Two columns */
+      width: 80%;
+      height: 500px;
+      justify-content: center;
+      gap: 5px;
+      margin: 0 auto;
+    }
+
+    .section--1 .categories .part1-A .category-item1{
+      width: 90%;
+      height: 230px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      
+    }
+
+
+    /*------------------------------------------------------------------- Section 2----------------------------------------------------------------*/
+
+
+    .section--2{
+      margin-top: 3%;
+      display: grid;
+      grid-template-columns:1fr;;
+      width: 100%;
+      gap: 5px;
+      align-items: start;
+      margin: 0 auto;
+      justify-content: center;
+      background: #fafafa;
+      
+    }
+
+    /*===============================RIGHT===========================*/
+
+.boxContainer{
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* Two columns */
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  background: #fafafa;
+}
+
+
+/*================================= product modal =======================*/
+.productMainWrapper{
+  top: 70%;
+}
+
+.productMainWrapper .productContainer,
+.productMainWrapper{
+  width: 95%;
+}
+.productMainWrapper .productContainer .productDiv{
+  grid-template-columns: 100%;
+}
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .nav .navOpenBtn,
+    .nav .navCloseBtn {
+      display: block;
+    }
+    .nav {
+      padding: 15px 20px;
+    }
+    .nav .nav-links {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      height: 100%;
+      max-width: 280px;
+      width: 100%;
+      padding-top: 100px;
+      row-gap: 30px;
+      flex-direction: column;
+      background-color: #4a98f7;
+      opacity:50%;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+      z-index: 100;
+    }
+    .nav.openNav .nav-links {
+      left: 0;
+    }
+    .nav .navOpenBtn {
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .nav .navCloseBtn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .nav .search-box {
+      top: calc(100% + 10px);
+      max-width: calc(100% - 20px);
+      right: 50%;
+      transform: translateX(50%);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    /*------------------------------------------------------------------- Section 2----------------------------------------------------------------*/
+    
+
+
+    /*===============================slide in popContainer===========================*/
+
+
+
+    .sideMainPopup{
+      position: absolute;
+      right: 0;
+      height:100%;
+      width: 100%;
+      z-index: 1;
+      background: rgb(199, 199, 199);
+      padding: 30px 20px;
+      display: flex;
+      transform: translateX(100%);
+      display: grid;
+      grid-template-columns:repeat(1, 1fr);
+      gap: 50px;
+    }
+
+    /*=============cart Box===========*/
+    .cartBox{
+      display: grid;
+      grid-template-columns:repeat(1, 1fr);
+      gap: 20px;
+      height: 100%;
+      margin-top: 50px;
+    }
+
+    .cartSpinner{
+      margin: 0 auto;
+    }
+
+    .cartBox .cartDecision span{
+      margin: 0 auto;
+    }
+
+    .cartBox .cartimg{
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+
+    }
+    .cartBox .cartimg .cartimgIMG{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+  
+
+
+  }

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!------------------------font awesome cdn link----------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!------------------------Material Icon CDN----------------------->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+</head>
+<body>
+
+   <!------------------------Nav Bar----------------------->
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" class="logo"><img src="" alt=""></a>
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="#">HOME OF SNEAKERS</a></li>
+
+          <select class="currencySelect">
+        </select>
+        <span class="material-symbols-outlined  cartDetails">
+          shopping_cart
+          </span>
+        </ul>
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <div class="search-box">
+          <i class="uil uil-search search-icon"></i>
+          <input class="sneakerSearchBox" type="text" placeholder="Search here..." />
+        </div>
+      </nav>
+
+      <section class="section--1">
+        
+        <div class="categories">
+            <div class="part1-A">
+
+              <div class="clockContainer">
+                <div class="clock">
+                    <div id="Date">Monday 26 September 2023</div>
+        
+                    <ul>
+                    <li id="hours">05</li>
+                        <li id="point">:</li>
+                        <li id="min">20</li>
+                        <li id="point">:</li>
+                        <li id="sec">30</li>
+                    </ul>
+                </div>
+            </div>
+                 
+              
+            </div>
+              <div class="part1-B">
+                    <button id="left-btn"><i class="arrow"></i></button>
+                      <div class="s1imgContainer">
+                      <img src="img/c2a.png" alt="" id="erasa" class="fade">
+                      </div>
+                    <button id="right-btn"><i class="arrow"></i></button>
+              </div>
+        </div>
+
+      </section>
+
+
+
+<section  id="section-2">
+
+  <div class="section--2">
+<!----------------------------filter div-----------------------------> 
+<div class="filters">
+  
+  <div class="accordion">
+      <div class="heading" active>
+        <div class="topic">Brands</div>
+            <div class="card2">
+          <!-- Display filter --> 
+                  <ul id="filterListDisplay">
+                  </ul>
+          </div>
+    </div>
+  </div>
+
+
+  <div class="accordion">
+    <div class="heading" active>
+      <div class="topic">Gender</div>
+          <div class="card2">
+        <!-- Display filter --> 
+                <ul id="filterListDisplay2" > </ul>
+        </div>
+  </div>
+</div>
+
+
+<div class="priceRangeWrapper">
+
+  <div class="priceRangeHeading">
+      <h2>Price Range</h2>
+      <p>Enter or select min and max price</p>
+  </div>
+  <div class="priceInput">
+      <div class="priceField">
+          <span>Min</span>
+          <input type="number" value="300" class="minInput">
+      </div>
+      <div class="separator">-</div>
+      <div class="priceField">
+          <span>Max</span>
+          <input type="number" value="3500" class="maxInput">
+      </div>
+  </div>
+
+  <div class="priceSlider">
+      <div class="progress"></div>
+  </div>
+  <div class="priceRangInput">
+      <input type="range" min="0" max="10000" value="300" class="minRange">
+      <input type="range" min="0" max="10000" value="300" class="maxRange">
+  </div>
+
+  <button class="btnPriceRange">Filter</button>
+  <button class="btnResetPriceRange">Reset</button>
+
+</div>
+
+
+</div>
+  <div class="boxContainer">
+</div>
+
+
+
+
+</div>
+</section>
+
+<br><br>
+
+
+
+<!--------------------------------Product Detail Modal----------------------------------->
+
+    <div class = "productMainWrapper productHidden">
+      <div class = "productContainer productHidden">
+        <button class="closeProductContainer">&times;</button>
+          <div class = "productDiv">
+              <div class = "productDivLeft">
+                  <div class = "productImgContainer">
+                      <img class="productImage img0" >
+                  </div>
+                  <div class = "productHoverContainer">
+                      <div class="productImage"><img class="img1"></div>
+                      <div class="productImage"><img  class="img2"></div>
+                      <div class="productImage"><img  class="img3"></div>
+                      <div class="productImage"><img  class="img4"></div>
+                      <div class="productImage"><img  class="img5"></div>
+                  </div>
+              </div>
+              <div class = "productDivRight">
+                  <span class = "productName"></span>
+                  <span class = "productPrice"></span>
+                  <div class = "productRating">
+                      <span><i class = "fas fa-star"></i></span>
+                      <span><i class = "fas fa-star"></i></span>
+                      <span><i class = "fas fa-star"></i></span>
+                      <span><i class = "fas fa-star"></i></span>
+                      <span><i class = "fas fa-star-half-alt"></i></span>
+                      <span>(350 ratings)</span>
+                  </div>
+                  <p class = "productDescription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae animi ad minima veritatis dolore. Architecto facere dignissimos voluptate fugit ratione molestias quis quidem exercitationem voluptas.</p>
+                  <div class = "productBtngroups">
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <!------------------------Dark Overlay----------------------->
+  <div class="productModalOverlay productHidden"></div>
+
+
+
+
+
+<!--------------------------------slide in cart popupContainer -----------------------------------> 
+
+  <div class="sidePopup">
+      <div class="cartMathHome"></div>
+
+      
+      <div class="sideMainPopup">
+              <span class="sideCloseBtn">&times;</span>
+      </div>
+  </div>
+  <div class="productModalOverlay productHidden"></div>
+
+  <div class="notificationBox">
+ 
+</div>
+
+<div class="notificationBox2">
+</div>
+
+<script src="js/objects.js"></script>
+<script src="js/objectdisplay.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

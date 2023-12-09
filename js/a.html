@@ -1,0 +1,68 @@
+<!--
+	This is a sample layout, you can follow this, however feel free to create your own unique layout, you do not have to follow this layout. 
+	(I encourage you to create your own webpage from scratch)
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Project</title>
+	</head>
+	<body>
+		<h1>Online Store</h1>
+		<span id="dateArea" style="float: right;">Date/Time</span>
+		<br/>
+		<span style="float: right;">
+			Currency: 
+			<img class="currencyFlag" src="img/cur/cad.jpg"/>
+			<select id="currencySelector">
+				<option selected value="CAD">CAD</option>
+				<option value="USD">USD</option>
+				<option value="GBP">GBP</option>
+			</select>
+		</span>
+		<br>
+		<fieldset> <legend>Store Items</legend>
+			<select id="displayFilter">
+				<option>All</option>
+			</select>
+			<br/>
+			<span><strong>| ID | Product Name | Price | Qty | Max | Category | Image |</strong></span>
+			<div id="inventoryOutput"></div>
+		</fieldset>
+		<br>
+		<fieldset> <legend>Select Items</legend>
+			<p>
+				Item ID: <input type="text" id="addItemId" />
+				&nbsp;
+				<span id="addIDValidationMessage"></span>
+			</p>
+			<p>
+				Qty: <input type="number" id="addItemQty" />
+				&nbsp;
+				<span id="addQtyValidationMessage"></span>
+			</p>
+			<p>
+				<input type="button" value="Item Details" />
+				<input type="button" value="Add Item"/>
+				<input type="button" value="Remove Item"/>
+			</p>
+		</fieldset>
+		<br>
+		<fieldset> <legend>Your Cart</legend>
+			<span><strong>| ID | Price | Qty | Subtotal |</strong></span>
+			<br>
+			<div id="cartOutput"></div>
+			<br>
+			<div id="cartCheckout"></div>
+		</fieldset>
+		<br>
+		<fieldset> <legend>Review an Item</legend>
+			<p>Product ID: <input type="text" id="reviewId" />&nbsp;<span id="reviewIdMsg"></span></p>
+			<p>Review: <input type="text" id="reviewDesc" size="100"/></p>
+			<p>Rating: <input type="number" id="reviewNum"/>&nbsp;<span id="addRatingValidationMessage"></span></p>
+			<p><input type="button" value="Review"/></p>
+		</fieldset>
+		
+        <!-- Javascript -->
+	</body>
+</html>
